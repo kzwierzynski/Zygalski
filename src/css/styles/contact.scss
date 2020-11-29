@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'functions';
+
+// So that the footer is "sticky" to the bottom
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 120px;
+}
+// "sticky" footer end
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.row{
+  margin: 0;
+}
+
+.wrapper{
+  // padding: 0;
+  margin: 3em 0;
+  box-shadow: $shadow;
+}
+
+.company-info{
+  background:$priml;
+  color: $whited2;
+  text-align: center;  
+  padding: 1rem;
+}
+
+.company-info li{
+  font-size: 1.1em;
+  padding-top: 0.5em;  
+}
+
+
+.contact{
+  background:#f9feff;
+  padding: 0;
+}
+
+.contact h3{
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+/* FORM STYLES */
+
+
+.contact form #js_send, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1rem;
+  border:1px solid $inf1;
+}
+
+.contact form #js_send{
+  background:$infl;
+  border:0;
+  text-transform: uppercase;
+  color:$white;    
+  cursor: pointer;  
+}
+
+.contact form #js_send:hover,.contact form #js_send:focus{
+  background:$inf;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+.contact form #js_send:disabled {
+  background-color: $inf2;
+  color: #aaa;
+  cursor: not-allowed !important;
+}
+
+.invalid-feedback{
+  font-size: 0.8em;
+}
+
+
+
+/* LARGE SCREENS */
+@media(min-width:768px){
+  .company-info li{
+    padding: 0;  
+  }
+}

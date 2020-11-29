@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "import/no-unresolved": "ignore",
+    "no-param-reassign": ["error", {"props": false}],
+    "linebreak-style": 0,
+    "no-shadow": ["error", {"allow": ["_"]}],
+    "no-unused-vars": ["error", {"allow": ["_"]}],
+    "object-curly-newline": ["error", {"ImportDeclaration": "never"}]
+  }
+}

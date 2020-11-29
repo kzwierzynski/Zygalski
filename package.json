@@ -1,0 +1,47 @@
+{
+  "name": "zygalskiJakub.pl",
+  "version": "1.0.0",
+  "description": "Jakub zygalski - Kancelaria adwokacka",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --watch-poll",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "codeloop.eu",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.2.x",
+    "@babel/preset-env": "7.2.x",
+    "autoprefixer": "9.4.x",
+    "babel-loader": "8.0.x",
+    "copy-webpack-plugin": "4.6.x",
+    "cross-env": "5.2.x",
+    "css-loader": "2.0.x",
+    "eslint": "5.10.x",
+    "eslint-config-airbnb": "17.1.x",
+    "eslint-loader": "2.1.x",
+    "eslint-plugin-import": "2.14.x",
+    "eslint-plugin-jsx-a11y": "6.1.x",
+    "eslint-plugin-react": "7.11.x",
+    "file-loader": "2.0.x",
+    "html-webpack-plugin": "3.2.x",
+    "mini-css-extract-plugin": "0.5.x",
+    "node-sass": "4.11.x",
+    "optimize-css-assets-webpack-plugin": "5.0.x",
+    "postcss-loader": "3.0.x",
+    "sass-loader": "7.1.x",
+    "stylelint": "9.9.x",
+    "stylelint-config-primer": "3.0.x",
+    "stylelint-webpack-plugin": "0.10.x",
+    "uglifyjs-webpack-plugin": "2.0.x",
+    "webpack": "4.27.x",
+    "webpack-cli": "3.1.x",
+    "webpack-dev-server": "3.1.x"
+  },
+  "dependencies": {
+    "bootstrap": "4.1.x",
+    "jquery": "3.3.x",
+    "popper.js": "1.14.x",
+    "swiper": "4.4.x"
+  }
+}

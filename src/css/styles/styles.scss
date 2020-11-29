@@ -1,0 +1,114 @@
+@import 'variables';
+@import 'functions';
+@import 'footer';
+
+// Variable Overrides 
+$theme-colors: (
+  "primary": $prim,
+  // "info" : $inf
+);
+$body-bg: $prim1;
+
+// Bootstrap Sass Imports
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+*, *::before, *::after {
+  // margin: 0;
+  // padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  padding-top: 60px;
+  background: $prim3;
+}
+
+nav{
+  border-bottom: solid $brd 2px !important;
+  padding: 0px !important;
+  background: $prim !important;  
+  // margin-bottom: 2px;
+}
+
+nav img{
+  max-height: 80px;
+}
+
+nav i, nav a{
+  float: right;
+}
+
+a.nav-link.active{
+  font-weight: bold !important;
+  // text-decoration: underline; 
+  // border-bottom: solid 1px white;
+}
+
+a.nav-link{
+  font-size: 1.1rem !important;  
+  padding: 0.5rem !important;
+}
+
+a.nav-link:hover{
+  font-weight: bold !important;
+}
+
+// tel i email ponad menu
+.nav-link--green{
+  font-size: 1rem;
+  padding: 0.5rem; 
+}
+
+.navbar-collapse{
+  display: flex;
+  flex-direction: column;
+}
+
+.card, .jumbotron, .box, .box1{
+  border: none !important;
+  box-shadow: $shadow;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.btn{
+  border-bottom: solid $brdl 2px !important;
+}
+
+// mobile
+@media(max-width:767px){
+  body{
+    font-size: 70%;
+  }
+  .nav-link{
+    font-size: 1.1rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 1.3rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+  h5{
+    font-size: 1rem;
+  }
+
+  a.nav-link, .nav-link--green{
+    padding-bottom: 1rem !important;
+  }
+  
+
+}
